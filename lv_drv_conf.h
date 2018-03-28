@@ -135,7 +135,7 @@
 /*-----------------------------------------
  *  Linux frame buffer device (/dev/fbx)
  *-----------------------------------------*/
-#define USE_FBDEV           0
+#define USE_FBDEV           1
 #if USE_FBDEV != 0
 #define FBDEV_PATH          "/dev/fb0"
 #endif
@@ -187,9 +187,9 @@
 /*-------------------------------------------------
  * Mouse as HID device (for Linux based systems)
  *------------------------------------------------*/
-#define USE_MOUSE_HID    0
+#define USE_MOUSE_HID    1
 #if USE_MOUSE_HID
-#define MOUSE_HID_DEV   "/dev/input/event0"
+#define MOUSE_HID_DEV   "/dev/input/event1"
 #endif
 
 /*-------------------------------

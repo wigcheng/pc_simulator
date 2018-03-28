@@ -1,9 +1,9 @@
 #
 # Makefile
 #
-CC = gcc
+CC = /home/wig/workspace/mq/sdk/buildroot/output/host/bin/arm-linux-gnueabihf-gcc
 CFLAGS = -Wall -Wshadow -Wundef -Wmaybe-uninitialized
-CFLAGS += -O3 -g3 -I./
+CFLAGS += -O3 -g3 -I./ -I/home/wig/workspace/mq/sdk/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include
 LDFLAGS += -lSDL2 -lm
 BIN = demo
 VPATH = 
